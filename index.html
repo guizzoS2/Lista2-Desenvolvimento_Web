@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="att1.css">
+    <title>AlertMSG</title>
+</head>
+<body>
+    <h1>Exercícios Lista | 2
+    </h1>
+    <h2>Avisos em Css</h2>
+    <div class="perigo">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Perigo!
+      </div>
+
+    <div class="atencao">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Atenção!!
+    </div>
+
+    <div class="info">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Informação
+    </div>
+    <hr>
+
+    <h2>Dicas em Css (Tooltips)</h2>
+    <ul>
+        <li>
+            <div class="tooltip">
+                Firewall
+                <span class="tooltiptext"> Um sistema de segurança que controla o tráfego de rede</span>
+            </div>
+        </li>
+        <li>
+            <div class="tooltip">
+                VPN
+                <span class="tooltiptext"> Uma rede privada virtual</span>
+            </div>
+        </li>
+        <li>
+            <div class="tooltip">
+                Malware
+                <span class="tooltiptext"> Software malicioso projetado para causar danos a sistemas de computadores</span>
+            </div>
+        </li>
+        <li>
+            <div class="tooltip">
+                Criptografia
+                <span class="tooltiptext"> O processo de codificar informações para que somente pessoas com a chave possam decodificá-las.</span>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    
+    <h2>Formulário Seguro</h2>
+    <div>
+        <form action="">
+            <fieldset>
+                <legend style="text-align: center;">Login</legend>
+                <label for="usu">Usuário</label>
+                <input type="text" name="usu" id="usu">
+                <label for="pass">Senha</label>
+                <input type="password" name="pass" id="pass" required>
+                <input type="submit" id="submit-button">
+                <div class="requisitos">
+                    <p>A senha precisa ter</p>
+                    <ul>
+                        <li id="dig">Pelo menos 8 digitos</li>
+                        <li id="min">Pelo menos 1 caracter minúsculo</li>
+                        <li id="mai">Pelo menos 1 caracter maiúsculo</li>
+                        <li id="esp">Pelo menos 1 caracter especial</li>
+                    </ul>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+
+    <hr>
+
+    <h2>Botão de Verificação!</h2>
+    <div>
+        <button class="verif">Verificar!</button>
+    </div>
+
+    <h1>A Fancy Table</h1>
+
+    <table id="ataques">
+    <tr>
+        <th>Ataque</th>
+        <th>Descrição</th>
+        <th>Principais Idades e Alvos</th>
+    </tr>
+    <tr>
+        <td>Phishing</td>
+        <td>Emails fraudulentos que visam enganar as vítimas</td>
+        <td>Todas as idades, mas mais comum entre adultos</td>
+    </tr>
+    <tr>
+        <td>Ransomware</td>
+        <td>Software malicioso que criptografa dados e exige resgate</td>
+        <td>Empresas e adultos de todas as idades</td>
+    </tr>
+    <tr>
+        <td>Malware</td>
+        <td>	Software malicioso que danifica sistemas</td>
+        <td>Todas as idades, mas mais comum entre adultos</td>
+    </tr>
+    <tr>
+        <td>Ataque de DDoS</td>
+        <td>Sobrecarrega servidores com tráfego falso</td>
+        <td>Principalmente empresas e infraestruturas online</td>
+    </tr>
+    <tr>
+        <td>Engenharia Social</td>
+        <td>Manipulação psicológica para obter informações confidenciais</td>
+        <td>Todas as idades, foco em manipulação psicológica</td>
+    </tr>
+    <tr>
+        <td>Ataque Zero-Day</td>
+        <td>Explora vulnerabilidades não corrigidas</td>
+        <td>Todas as idades, principalmente empresas</td>
+    </tr>
+    <tr>
+        <td>Ataque de Injeção</td>
+        <td>Injeção de código malicioso em aplicações web</td>
+        <td>Principalmente empresas</td>
+    </tr>
+    <tr>
+        <td>Ataque de Engenharia Reversa</td>
+        <td>Análise e exploração de software</td>
+        <td>Especialistas em segurança cibernética</td>
+    </tr>
+    <tr>
+        <td>Ataque de Sniffing</td>
+        <td>Interceptação de dados em trânsito</td>
+        <td>Principalmente empresas e adultos</td>
+    </tr>
+    </table>
+
+</body>
+
+<script src="script.js"></script>
+</html>

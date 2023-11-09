@@ -1,0 +1,123 @@
+.perigo {
+    padding: 20px;
+    background-color: #f44336; 
+    color: black    ;
+    margin-bottom: 15px;
+  }
+
+.atencao {
+    padding: 20px;
+    background-color: rgb(250, 250, 49);
+    color: black;
+    margin-bottom: 15px;
+}
+  
+.info {
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    margin-bottom: 15px;
+}
+  /* Botão de Fechar*/
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Botão de Fechar fica preto */
+  .closebtn:hover {
+    color: black;
+  }
+
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+  /* Dica */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 125px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    top: -5px;
+    left: 105%;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.requisitos {
+  margin-left: 18%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.verif {
+  padding: 10px 20px;
+  font-size: 22px;
+  color: #fff;
+  background: #29ca8e;
+  width: 250px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 8px 5px -5px rgba(0, 0, 0, .2);
+  display: grid;
+  place-content: center;
+}
+
+.loader {
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #fff;
+  animation: an1 1s ease infinite;
+}
+
+@keyframes an1 {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+#ataques {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#ataques td, #ataques th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#ataques tr:nth-child(even){background-color: #f2f2f2;}
+
+#ataques tr:hover {background-color: #ddd;}
+
+#ataques th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0404aa;
+  color: white;
+}
